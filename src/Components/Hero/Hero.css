@@ -1,0 +1,6 @@
+.img{
+    width: 100px;
+    height: 100px; /* Ensure equal width and height for a circle */
+    border-radius: 50%;
+    overflow: hidden; /* Hide any content exceeding the circle */ 
+}
