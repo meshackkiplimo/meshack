@@ -12,7 +12,7 @@ const Services = () => {
         <img   src={theme_pattern} />
 
     </div>
-    <div className='service-container'>
+    <div className='services-container'>
      {Services_Data.map((service,index)=>{
 
         return <div key={index} className='services-format' >
