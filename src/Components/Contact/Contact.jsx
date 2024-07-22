@@ -5,6 +5,30 @@ import call_icon from '../../assets/call_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 
 const Contact = () => {
+  
+  const onSubmit = async (event) => {
+    event.preventDefault();
+   
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "5fa88a2d-dee5-4524-9d84-aa0e8c3ae142");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      alert(data.message)
+      
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      
+    }
+  };
   return (
     <div  className='contact'>
     <div className='contact-title'>
@@ -29,14 +53,14 @@ const Contact = () => {
         
 
         </div>
-        <div className='contact-detail'>
+        <div id='contact' className='contact-detail'>
         <img  src={location_icon} /><p>Nairobi,Kenya</p>
         
 
         </div>
       </div>
       </div>
-      <form className='contact-right'>
+      <form  onSubmit={onSubmit}  className='contact-right'>
       <label htmlFor=''>Your Name</label>
       <input type='text' name='name' placeholder='Enter your name'/>
       <label htmlFor=''>Your Email</label>

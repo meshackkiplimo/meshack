@@ -1,22 +1,28 @@
-
-import './Hero.css'
-import profile_img from '../../assets/profile_img.svg'
+import "./Hero.css";
+import profile_img from "../../assets/profile_img.svg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
   return (
-    <div className='hero'>
-    <img src={profile_img} className='img' />
-    <h1>Iam<span> Meshack Kimaiyo</span>  , A software Engineer.  </h1>
-    <p>Iam a fullsstack Engineer from Nairobi , Kenya with 2 years of experience in tech. </p>
-    <div className='hero-action'>
-        <div className='hero-connect'>Connect with me</div>
-        <div className='hero-resume'>My Resume</div>
-
-
+    <div id="home" className="hero">
+      <img src={profile_img} className="img" alt="Profile" />
+      <h1>
+        I am<span> Meshack Kimaiyo</span>, a Software Engineer.
+      </h1>
+      <p>
+        I am a Fullstack Engineer from Nairobi, Kenya with 2 years of experience
+        in tech.
+      </p>
+      <div className="hero-action">
+        <div className="hero-connect">
+          <AnchorLink className="anchor-link" offset={50} href="#contact">
+            Connect with me
+          </AnchorLink>
+        </div>
+        <div className="hero-resume">My Resume</div>
+      </div>
     </div>
-      
-    </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
