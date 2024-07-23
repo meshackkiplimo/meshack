@@ -15,7 +15,7 @@
     font-size: 20px;
     max-width:400px;
 }
-.footer-top-rigth{
+.footer-top-right{
     display:flex;
     align-items:center;
     gap:35px;
@@ -27,7 +27,7 @@
     padding:20px 30px;
     border-radius:50px;
     background:#32323B;
-    padding-rigth:80px;
+    padding-right:80px;
 }
 .footer-email-input  input{
     outline:none;
@@ -35,7 +35,7 @@
     background:transparent;
     color:#a0a0a0;
     font-family:outfit;
-    font-size
+    font-size:20px;
     
 }  
 .footer-subscribe{
@@ -63,4 +63,19 @@
 .footer-subscribe:hover{
     transform:scale(1.1);
     transition:0.3s;
+}
+
+@media(max-width:768px){
+    .footer{
+        margin:50px 70px;
+    }
+    .footer-top{
+        flex-direction:column;
+        gap:50px;
+    }
+    .footer-bottom{
+        flex-direction:column-reverse;
+        display:flex;
+        margin-bottom:50px;
+    }
 }
