@@ -1,27 +1,31 @@
 import "./About.css";
-import theme_pattern from "../../assets/theme_pattern.svg";
-import profile_img from "../../assets/about_profile.svg";
+// import theme_pattern from "../../assets/theme_pattern.svg";
+// import profile_img from "../../assets/about_profile.svg";
 
 const About = () => {
   return (
     <div id="about" className="about">
       <div className="about-title">
         <h1>About me</h1>
-        <img src={theme_pattern} />
+        {/* <img src={theme_pattern} /> */}
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img src={profile_img} className="img" />
+          {/* <img src={profile_img} className="img" /> */}
         </div>
 
         <div className="about-right">
           <div className="about-para">
             <p>
-              front end developer who has wide knowlege in UI/UX design with
+              front end developer who has wide knowledge in UI/UX design with
               more and more experience
             </p>
-            <p>backend developer hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
-            <p> fullstack engineer hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            <p>backend developer ,Interacted wit Api Intergrations</p>
+            <p>
+              {" "}
+              fullstack engineer , Iam able to intergrate both backend and
+              frontend to communicate and function well
+            </p>
           </div>
           <div className="about-skills">
             <div className="about-skill">

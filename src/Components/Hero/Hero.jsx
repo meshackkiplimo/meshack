@@ -1,6 +1,7 @@
 import "./Hero.css";
 import profile_img from "../../assets/profile_img.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import resume from "../../assets/kiplimo.pdf"; // Import the PDF file
 
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="hero-resume">My Resume</div>
+        <a href={resume} className="hero-resume" download>
+          My Resume
+        </a>
       </div>
     </div>
   );
