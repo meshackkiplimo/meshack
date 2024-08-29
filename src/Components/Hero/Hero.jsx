@@ -1,7 +1,7 @@
 import "./Hero.css";
 import profile_img from "../../assets/profile_img.svg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import resume from "../../assets/kiplimo.pdf"; // Import the PDF file
+import resume from "../../assets/MESHACK.pdf"; // Import the PDF file
 
 const Hero = () => {
   return (
